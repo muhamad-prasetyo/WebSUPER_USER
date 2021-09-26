@@ -25,7 +25,11 @@ Auth::routes();
 Route::middleware('auth')->group(function(){
 
     
-    Route::get('/dashboard', 'Dashboard\DashboardController@index');
+    Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
+    Route::get('/dashboard/absen', 'Dashboard\AbsenController@index')->name('dashboard.absen');
+    Route::get('/dashboard/materi', 'Dashboard\MateriController@index')->name('dashboard.materi');
+    Route::get('/dashboard/langganan', 'Dashboard\LanggananController@index')->name('dashboard.langganan');
+
     
     // Users
     Route::get('/dashboard/users', 'Dashboard\UserController@index')->name('dashboard.users');

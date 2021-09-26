@@ -37,19 +37,24 @@ class Menu extends Component
     public function list() {
         return [
             [
-                'label' => 'Dashboard'
+                'label' => 'Dashboard',
+                'route' => 'dashboard'
             ],
             [
-                'label' => 'Pelajaran'
+                'label' => 'Abesensi',
+                'route' => 'dashboard.absen'
             ],
             [
-                'label' => 'Bahasa Pemrograman'
+                'label' => 'Materi',
+                'route' => 'dashboard.materi'
             ],
             [
-                'label' => 'Langganan'
+                'label' => 'Langganan',
+                'route' => 'dashboard.langganan'
             ],
             [
-                'label' => 'Users'
+                'label' => 'Users',
+                'route' => 'dashboard.users'
             ]
         ];
     }
