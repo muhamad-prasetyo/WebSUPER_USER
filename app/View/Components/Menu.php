@@ -38,23 +38,28 @@ class Menu extends Component
         return [
             [
                 'label' => 'Dashboard',
-                'route' => 'dashboard'
+                'route' => 'dashboard',
+                'icon' => 'fas fa-tachometer-alt'
             ],
             [
                 'label' => 'Abesensi',
-                'route' => 'dashboard.absen'
+                'route' => 'dashboard.absen',
+                'icon' => 'fas fa-address-book'
             ],
             [
                 'label' => 'Materi',
-                'route' => 'dashboard.materi'
+                'route' => 'dashboard.materi',
+                'icon' => 'fas fa-graduation-cap'
             ],
             [
                 'label' => 'Langganan',
-                'route' => 'dashboard.langganan'
+                'route' => 'dashboard.langganan',
+                'icon' => 'fas fa-star'
             ],
             [
                 'label' => 'Users',
-                'route' => 'dashboard.users'
+                'route' => 'dashboard.users',
+                'icon' => 'fas fa-users'
             ]
         ];
     }
